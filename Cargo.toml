@@ -1,0 +1,24 @@
+[package]
+name = "LaplacesMiao"
+authors = ["Qijia Yang <2421653893@qq.com>"]
+version = "0.1.0"
+edition = "2024"
+license = "MPL-2.0"
+
+[dependencies]
+lexer = { path = "crates/lexer" }
+parser = { path = "crates/parser" }
+
+[workspace]
+members = [
+    "crates/*",
+    ".",
+]
+
+[workspace.package]
+version = "0.1.0"
+authors = ["Qijia Yang <2421653893@qq.com>"]
+edition = "2024"
+license = "MPL-2.0"
+
+[workspace.dependencies]
